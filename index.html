@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test reCAPTCHA v3</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcIS_4qAAAAAJ-HdRsd2ZVxspO6l_f48b82W5z1"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcIS1srAAAAAP7-ybQveXqegh1HfhLqj-iAEaOn"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,7 +52,7 @@
     <script>
         document.getElementById("submitBtn").addEventListener("click", function() {
             grecaptcha.ready(function() {
-                grecaptcha.execute('6LcIS_4qAAAAAJ-HdRsd2ZVxspO6l_f48b82W5z1', { action: 'submit' }).then(function(token) {
+                grecaptcha.execute('6LcIS1srAAAAAP7-ybQveXqegh1HfhLqj-iAEaOn', { action: 'LOGIN' }).then(function(token) {
                     document.getElementById("tokenDisplay").innerText = token;
                     console.log("reCAPTCHA Token:", token);
                 });
